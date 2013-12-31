@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset=UTF-8>
-  <title>jQuery.hola.js</title>
+    <meta charset=UTF-8>
+    <title>jQuery.hola.js</title>
+    <link rel="stylesheet" href="src/css/hola.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="src/js/jquery.hola.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.hola-main').hola();
+        })
+    </script>
 </head>
 <body>
-<h1>jQuery ¡HOLA!</h1>
-<h2>HOrizontal LAyout “simple comme bonjour”</h2>
+<div id="main" class="hola-main hola-fullscreen">
+    <div class="hola-pane hola-auto" id="presentation">
+        <div>
+            <h1>jQuery ¡HOLA!</h1>
+
+            <h2>HOrizontal LAyout “simple comme bonjour”</h2>
+
+            <p>If you want to build fullscreen horizontal websites or just an image carousel, just try
+                jQuery.hola.js. </p>
+
+            <div class="hola-main" id="slider">
+                <div class="hola-pane">
+                    <img src="http://lorempixel.com/600/250/people" alt="fake img 1"/>
+                </div>
+                <div class="hola-pane">
+                    <img src="http://lorempixel.com/600/250/city" alt="fake img 2"/>
+                </div>
+                <div class="hola-pane">
+                    <img src="http://lorempixel.com/600/250/transport" alt="fake img 3"/>
+                </div>
+                <div class="hola-pane">
+                    <img src="http://lorempixel.com/600/250/technics" alt="fake img 4"/>
+                </div>
+            </div>
+            <ul class="slide-picker">
+                <li><a onclick="$('#slider').hola('slideToPrev')">&lt;</a></li>
+                <li><a onclick="$('#slider').hola('slideTo', '.hola-pane:eq(0)')">1</a></li>
+                <li><a onclick="$('#slider').hola('slideTo', '.hola-pane:eq(1)')">2</a></li>
+                <li><a onclick="$('#slider').hola('slideTo', '.hola-pane:eq(2)')">3</a></li>
+                <li><a onclick="$('#slider').hola('slideTo', '.hola-pane:eq(3)')">4</a></li>
+                <li><a onclick="$('#slider').hola('slideToNext')">&gt;</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hola-pane hola-resizable" id="styling">
+        <div>
+            <h2>Styling</h2>
+        </div>
+    </div>
+    <div class="hola-pane hola-auto" id="examples">
+        <div>
+            <h2>Examples</h2>
+        </div>
+    </div>
+</div>
 </body>
 </html>

@@ -109,6 +109,10 @@ jQuery.fn.hola = function (optionsOrMethod, pane) {
             position: 'relative'
         });
 
+        $wrapper.css({
+            position: 'relative'
+        });
+
         if (isFullscreen) {
             $main.css({
                 position: 'absolute',

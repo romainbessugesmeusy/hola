@@ -1,0 +1,62 @@
+/*
+#ac0031
+#c10052
+#ea336b
+#d6255b
+#ad0051
+
+*/
+
+#main {
+    color: white;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 100;
+}
+
+#presentation {
+    background: #ac0031;
+}
+
+#main > .hola-wrapper > .hola-pane > div {
+    padding: 1em;
+}
+
+#styling {
+    background: #c10052;
+    width: 200px;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+#examples {
+    background: #ea336b;
+}
+
+#slider {
+    width: 600px;
+    height: 250px;
+    border: 10px white solid;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.2);
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 0 #ea336b, -3px -3px 0 #8e0014;
+}
+
+h2 {
+    font-size: 2em;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 0.5em;
+}
+
+.hola-resize-bar {
+    background: white;
+    box-shadow: 0 3px 3px #000;
+}
